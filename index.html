@@ -751,6 +751,8 @@ function idleLogout() {
   logoutNotice = `Signed out after ${IDLE_MINUTES} minutes without activity.`;
   closeModal();
   sb.auth.signOut();
+}
+
 async function doSignOut() {
   stopIdle();
   closeModal();
